@@ -8,7 +8,7 @@ public class SillyController {
 	
 	@RequestMapping("/showForm")
 	public String displayTheForm() {
-		return "silly"; 
+		return "silly"; /*jsp file name*/
 	}
 
 }
