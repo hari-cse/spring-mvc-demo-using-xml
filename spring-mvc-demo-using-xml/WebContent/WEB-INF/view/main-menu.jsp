@@ -15,8 +15,10 @@
 	<a href="hello/showForm">Plain Hello World</a>
 	<br>
 	<br>
-	<img
-		src="${pageContext.request.contextPath}/resources/images/logo.jpg" />
+	<a href="student/showForm">Student Form</a>
+	<br>
+	<br>
+	<img src="${pageContext.request.contextPath}/resources/images/logo.jpg" />
 	<br>
 	<br>
 	<input type="button" onclick="doSomeWork()" value="Click Me" />
