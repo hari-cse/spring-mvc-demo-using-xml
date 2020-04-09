@@ -13,6 +13,12 @@ public class Student {
 	private LinkedHashMap<String, String> countryOptions;
 	
 	public Student() {
+		/**
+		 * Here we will set items for Drop-Down component(form:select) and set to 
+		 * the following tag
+		 * <form:options items="${student.countryOptions}"/>
+		 * student->className and countryOptions->attribute name
+		 * 
 		//populate country options: used ISO country Code
 		//example: IND->key/code and India->value/label
 		countryOptions = new LinkedHashMap<>();
@@ -20,6 +26,7 @@ public class Student {
 		countryOptions.put("DE", "Germany");
 		countryOptions.put("BRA", "Brazil");
 		countryOptions.put("FR", "France");
+		 */
 	}
 
 	public String getFirstName() {

@@ -15,11 +15,14 @@
 		<br>
 	Country:
 			<form:select path="country">
-		<!--  example for static option settings
+			<!--  example for static option settings
 			<form:option value="Brazil" label="Brazil" />
 			<form:option value="Germany" label="Germany" />
 			<form:option value="India" label="India" />  -->
-		<form:options items="${student.countryOptions}"/>
+			<!--  example for options settings using POJO Student
+		<form:options items="${student.countryOptions}"/> -->
+			<!--  example for options settings using Properties file-->
+			<form:options items="${countryOptions}" />
 		</form:select>
 		<br>
 		<br>
