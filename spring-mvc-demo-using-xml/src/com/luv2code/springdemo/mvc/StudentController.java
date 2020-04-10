@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/student")
 public class StudentController {
 	
-	@Value("#{countryOptions}")
+	@Value("#{countryOptions}")/*countryOptions is file name of properties file mentioned in xml */
 	private Map<String, String> countryOptions;
 
 	@RequestMapping("/showForm")

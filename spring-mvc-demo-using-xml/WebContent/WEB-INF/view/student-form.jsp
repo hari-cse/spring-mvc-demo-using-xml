@@ -26,6 +26,21 @@
 		</form:select>
 		<br>
 		<br>
+		Favorite Language:
+		<!--  example for static radio button settings
+		<form:radiobutton path="favoriteLanguage" value="Java" />Java
+		<form:radiobutton path="favoriteLanguage" value="C#" />C#
+		<form:radiobutton path="favoriteLanguage" value="PHP" />PHP -->
+		
+		<form:radiobuttons path="favoriteLanguage" items="${student.favoriteLanguageOptions}" />
+		<br>
+		<br>
+		Operating Systems:
+		<form:checkbox path="operatingSystems" value="linux" /> Linux
+		<form:checkbox path="operatingSystems" value="Mac Os" /> Mac Os
+		<form:checkbox path="operatingSystems" value="MS Windows" /> MS Windows
+		<br>
+		<br>
 		<input type="submit" value="Submit">
 	</form:form>
 </body>
