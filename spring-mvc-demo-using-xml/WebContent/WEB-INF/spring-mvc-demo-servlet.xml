@@ -32,9 +32,14 @@
 	<mvc:resources mapping="/resources/**"
 		location="/resources/"></mvc:resources>
 	
-	<!-- to access the data from properties file to set jsp component -->	
+	<!-- to access the data from properties file to set JSP component -->	
 	<util:properties id="countryOptions" location="classpath:../countries.properties" />
 
+	<!-- Load custom message resources -->
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames" value="resources/messages"></property>
+	</bean>
 </beans>
 
 
